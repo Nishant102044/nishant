@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import matplotlib.pyplot as plt
 
 def category_sales_chart(df):
@@ -14,4 +15,22 @@ def category_sales_chart(df):
 
     plt.savefig("Reports/category_sales.png")
 
+=======
+import matplotlib.pyplot as plt
+
+def category_sales_chart(df):
+
+    summary = df.groupby("Product_Category")["Sales_Amount"].sum()
+
+    summary.plot(kind="bar")
+
+    plt.title("Category Wise Sales")
+
+    plt.ylabel("Sales")
+
+    plt.tight_layout()
+
+    plt.savefig("Reports/category_sales.png")
+
+>>>>>>> 6442826c615e90312781ce7636378122ee1c4d54
     plt.show()

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 streamlit
 pandas
 plotly
+=======
+streamlit
+pandas
+plotly
+>>>>>>> 6442826c615e90312781ce7636378122ee1c4d54
 openpyxl

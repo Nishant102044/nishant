@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pandas as pd
 
 def clean_data(file_path):
@@ -13,4 +14,21 @@ def clean_data(file_path):
     # Save cleaned file
     df.to_excel("Reports/cleaned_sales_data.xlsx", index=False)
 
+=======
+import pandas as pd
+
+def clean_data(file_path):
+
+    df = pd.read_excel(file_path)
+
+    # Remove duplicates
+    df = df.drop_duplicates()
+
+    # Fill missing values
+    df = df.fillna("Unknown")
+
+    # Save cleaned file
+    df.to_excel("Reports/cleaned_sales_data.xlsx", index=False)
+
+>>>>>>> 6442826c615e90312781ce7636378122ee1c4d54
     return df
