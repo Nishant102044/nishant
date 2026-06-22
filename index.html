@@ -80,7 +80,7 @@
         }
 
         .skill-card:hover {
-               transform: translateY(-8px);
+            transform: translateY(-8px);
             /* card thoda upar uth jaega */
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             background: #7b2fff;
@@ -131,6 +131,28 @@
             /* halka blue background */
             transform: translateY(-8px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact links hover */
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #2f80ff;
+            /* hover par blue highlight */
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        footer {
+            background: #020913;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 17px;
         }
     </style>
 </head>
@@ -402,31 +424,42 @@
                 <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2>
             </div>
             <div class="row justify-content-center g-4">
+
+                <!-- Phone (WhatsApp) -->
                 <div class="col-md-3">
                     <div class="contact-item">
                         <i class="fa-solid fa-phone"></i>
-                        <h4>Phone</h4>
-                        <p>+91-9485880442</p>
+                        <h4>
+                            <a href="https://wa.me/919485880442" target="_blank">
+                                +91-9485880442
+                            </a>
+                        </h4>
                     </div>
                 </div>
+
+                <!-- Email -->
                 <div class="col-md-3">
                     <div class="contact-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <h4>Email</h4>
-                        <p>ns0407337@gmail.com</p>
+                        <h4>
+                            <a href="mailto:ns0407337@gmail.com">
+                                ns0407337@gmail.com
+                            </a>
+                        </h4>
                     </div>
                 </div>
+
+                <!-- Location -->
                 <div class="col-md-3">
                     <div class="contact-item">
                         <i class="fa-solid fa-location-dot"></i>
-                        <h4>Location</h4>
-                        <p>Rewari, Haryana</p>
+                        <h4>Rewari, Haryana</h4>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-
     <!-- FOOTER -->
     <footer>
         © 2026 Nishant. All Rights Reserved.
